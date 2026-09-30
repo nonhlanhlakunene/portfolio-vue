@@ -3,7 +3,7 @@ const projects = [
   {
     title: "GearTrail",
     tech: "HTML · CSS",
-    image: "/images/geartrail.png",
+    image: "/images/Screenshot 2026-06-25 112547.jpg",
     alt: "GearTrail landing page",
     description:
       "A premium landing page built for an outdoor exploration brand featuring a high-impact hero section, clean typography, and seamless layout design.",
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "The Flow Gallery",
     tech: "HTML · CSS · Grid",
-    image: "/images/flow-gallery.png",
+    image: "/images/image.png",
     alt: "The Flow Gallery website",
     description:
       "An elegant, interactive media portfolio gallery styled with structural CSS filters, responsive card modules, and smooth visual hover layers.",

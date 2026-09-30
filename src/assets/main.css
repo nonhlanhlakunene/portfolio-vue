@@ -489,10 +489,10 @@ section {
 }
 
 .project-links {
-  text-align: center;
+  display: flex;
   gap: 16px;
   margin-top: 8px;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .btn-project,
@@ -569,6 +569,7 @@ section {
 }
 
 .contact-links {
+  display: flex;
   gap: 24px;
   margin-top: 8px;
   justify-content: center;
