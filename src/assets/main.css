@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +10,10 @@
   --accent: #e07a5f;
   --text: #f4f4f4;
   --muted: #a0a0a0;
-  
+
   /* Add this new variable for dark mode bubbles */
   --bubble-color: rgba(217, 163, 143, 0.15);
-  
+
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
   --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.05);
   --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.06);
@@ -30,13 +29,13 @@
 
 body {
   font-family:
-  "Poppins",
-  system-ui,
-  -apple-system,
-  "Segoe UI",
-  Roboto,
-  Arial,
-  sans-serif;
+    "Poppins",
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
   background-color: var(--background);
   color: var(--text);
   margin: 0;
@@ -352,7 +351,6 @@ section {
   text-align: center;
 }
 
-
 .about-img {
   width: 35%;
   flex-shrink: 0;
@@ -368,8 +366,6 @@ section {
   width: 100%;
   height: auto;
 }
-
-
 
 .about-text {
   flex: 1;
@@ -412,7 +408,7 @@ section {
   box-shadow: var(--shadow-sm);
   transition: all 0.25s ease;
   cursor: pointer;
-  width : 10%;
+  width: 10%;
 }
 
 .skill:hover {
@@ -497,7 +493,6 @@ section {
   gap: 16px;
   margin-top: 8px;
   justify-content: flex-start;
-  
 }
 
 .btn-project,
@@ -681,19 +676,19 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   /* Navbar */
-  
+
   .h1 {
     font-size: 28px;
   }
-  
+
   .h2 {
     font-size: 22px;
   }
-  
-  p{
+
+  p {
     font-size: 14px;
   }
-  
+
   .navbar {
     flex-wrap: wrap;
     border-radius: 20px;
@@ -701,89 +696,88 @@ footer {
     top: 10px;
     justify-content: center;
     padding: 16px 20px;
-    background-color:rgba(30, 30, 30, 0.98);
+    background-color: rgba(30, 30, 30, 0.98);
   }
-  
+
   .navbar .nav-links {
     display: none;
   }
-  
+
   /* Hero */
   .name {
     font-size: 34px;
   }
-  
+
   .hero-card {
     padding: 36px 24px;
   }
-  
+
   .hero-avatar {
     width: 250px;
     height: 270px;
   }
-  
+
   /* About */
   .about-wrapper {
     flex-direction: column;
     text-align: center;
   }
-  
+
   /* Projects */
   .projects-grid {
     flex-direction: column;
   }
-  
+
   .project-links {
     justify-content: center;
   }
-  
+
   /* Contact */
   .contact-wrapper {
     flex-direction: column;
     gap: 24px;
   }
-  
-  
+
   .contact-right {
     width: 100%;
   }
-  
+
   .form-group input,
   .form-group textarea {
     width: 100%;
   }
-  
+
   .btn-primary {
     width: 100%;
   }
   .contact-links {
     justify-content: center;
   }
-  
+
   section {
     padding: 40px 16px;
   }
-  
+
   /* Section Cards */
   .section-card {
     padding: 24px 16px;
     border-radius: 16px;
   }
-  
+
   .skills-grid {
     gap: 8px;
   }
-  
-  .skill {  
+
+  .skill {
     padding: 10px 12px;
     font-size: 11px;
     min-width: 65px;
   }
-  
+
   .skill i {
     font-size: 24px;
   }
-  
+
   /* Project cards */
   .project-card {
     padding: 16px;
@@ -846,7 +840,9 @@ footer {
 
 .theme-toggle-btn i {
   font-size: 18px;
-  transition: transform 0.4s ease, opacity 0.3s ease;
+  transition:
+    transform 0.4s ease,
+    opacity 0.3s ease;
   position: absolute;
 }
 
@@ -867,52 +863,35 @@ footer {
   transform: scale(1.08);
   border-color: var(--accent);
 }
-
-/* WHEN CHECKBOX IS TICKED -> APPLY LIGHT MODE VALUES globally to siblings */
-/* WHEN CHECKBOX IS TICKED -> APPLY LIGHT MODE VALUES */
-
-/* WHEN CHECKBOX IS TICKED -> APPLY LIGHT MODE VALUES */
-.theme-checkbox:checked ~ * {
+body.light {
   --background: #fdfbf7;
   --card: #ffffff;
   --text: #2b2b2b;
   --muted: #6b6b6b;
   --border-light: rgba(224, 122, 95, 0.15);
   --accent-soft: rgba(224, 122, 95, 0.08);
-  --bubble-color: rgba(224, 122, 95, 0.07);
+  --bubble-color: rgba(224, 122, 95, 0.28);
 }
 
-/* Force the main layout sections to actively pull the updated background variable */
-.theme-checkbox:checked ~ main,
-.theme-checkbox:checked ~ header,
-.theme-checkbox:checked ~ footer,
-.theme-checkbox:checked ~ #home {
-  background-color: var(--background) !important;
-  transition: background-color 0.3s ease;
-}
-
-/* Specific UI adjustments for light theme readability */
-.theme-checkbox:checked ~ header .navbar {
+body.light header .navbar {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.theme-checkbox:checked ~ .theme-toggle-btn {
+body.light .theme-toggle-btn {
   background: #ffffff;
 }
 
-/* Rotate and switch the theme icons when checked */
-.theme-checkbox:checked ~ .theme-toggle-btn .moon-icon {
+body.light .theme-toggle-btn .moon-icon {
   opacity: 0;
   transform: rotate(-90deg);
 }
 
-.theme-checkbox:checked ~ .theme-toggle-btn .sun-icon {
+body.light .theme-toggle-btn .sun-icon {
   opacity: 1;
   transform: rotate(0deg);
 }
 
-/* Ensure the about placeholder vector blends cleanly */
-.theme-checkbox:checked ~ main #about .about-img img {
+body.light #about .about-img img {
   filter: grayscale(0.2);
 }
 
