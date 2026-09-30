@@ -7,8 +7,8 @@ const projects = [
     alt: "GearTrail landing page",
     description:
       "A premium landing page built for an outdoor exploration brand featuring a high-impact hero section, clean typography, and seamless layout design.",
-    github: "",
-    live: "",
+    github: "https://github.com/nonhlanhlakunene/the-gear-trail",
+    live: "https://nonhlanhlakunene.github.io/the-gear-trail/",
   },
   {
     title: "The Flow Gallery",
@@ -17,8 +17,8 @@ const projects = [
     alt: "The Flow Gallery website",
     description:
       "An elegant, interactive media portfolio gallery styled with structural CSS filters, responsive card modules, and smooth visual hover layers.",
-    github: "",
-    live: "",
+    github: "https://github.com/nonhlanhlakunene/the-flow-gallery",
+    live: "https://nonhlanhlakunene.github.io/the-flow-gallery/",
   },
   {
     title: "Scented Co.",
@@ -28,7 +28,7 @@ const projects = [
     alt: "Scented Co. website",
     description:
       "A multi-page candle store built using Bootstrap. Features a product grid, image carousel, contact form and smooth scroll animations, styled entirely with Bootstrap, no external CSS.",
-    github: "",
+    github: "https://github.com/nonhlanhlakunene/lca-html-css-exercises/tree/week2-html-css-ex-04",
     live: "https://nonhlanhlakunene.github.io/lca-html-css-exercises/",
   },
 ];
