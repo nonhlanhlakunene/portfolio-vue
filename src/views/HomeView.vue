@@ -1,10 +1,10 @@
 <script setup>
 import NavBar from '../components/NavBar.vue'
+import HeroSection from '../components/HeroSection.vue'
 </script>
 
 <template>
   <NavBar/>
-  <main>
-    <h1>Portfolio coming soon</h1>
+  <main><HeroSection />
   </main>
 </template>
